@@ -1,0 +1,35 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Thu Jul  2 16:27:23 2020]
+[!
+>Consensus of 10000 trees
+>
+>Source of trees from which consensus(es) calculated...
+>Heuristic search settings:
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      Of 64 total characters:
+>        All characters are of type 'unord'
+>        All characters have equal weight
+>        10 characters are parsimony-uninformative
+>        Number of parsimony-informative characters = 54
+>    Gaps are treated as "missing"
+>  Starting tree(s) obtained via stepwise addition
+>    Addition sequence: random
+>    Number of replicates = 100
+>    Starting seed = generated automatically
+>    Number of trees held at each step = 10
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with no reconnection limit
+>    Steepest descent option not in effect
+>  Initial 'Maxtrees' setting = 10000
+>  Zero-length branches not collapsed
+>  'MulTrees' option in effect
+>  No topological constraints in effect
+>  Trees are unrooted
+>
+>Search terminated prematurely (no room to store new trees)
+>   10000 trees retained
+>  Time used = 8.61 sec (CPU time = 5.88 sec)
+]
+	tree Strict = [&U] (Monotremata,Metatheria,((Edentata,Pholidota),(Carnivora,(Tubulidentata,(Hyracoidea,(Sirenia,Proboscidea))),Insectivora,(Primates,Scandentia,(Dermoptera,Chiroptera)),((Macroscelidea,(Lagomorpha,Rodentia)),Perissodactyla),Artiodactyla,Cetacea)));
+end;

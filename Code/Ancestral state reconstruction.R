@@ -2,6 +2,18 @@ library(ape)
 library(phytools)
 library(diversitree)
 
+##### continuous characters #####
+anoletree <- read.tree("http://www.phytools.org/eqg2015/data/anole.tre")
+plotTree(anoletree)
+svl <- read.csv("http://www.phytools.org/eqg2015/data/svl.csv",
+                row.names=1) # data frame with a continuous vairable assigned to all species
+svl <- as.matrix(svl)[,1] # convert column with continuous data to a matrix of numbers with names
+fit <- fastAnc(anoletree, svl, vars = T, CI = T) # estimate ancestral states
+obj <- contMap(anoletree, svl) # maps continuous character to a tree
+
+
+
+##### discrete characters #####
 data("anoletree")
 x <- getStates(anoletree, "tips")
 tree <- anoletree

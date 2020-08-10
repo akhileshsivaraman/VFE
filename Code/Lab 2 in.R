@@ -62,8 +62,6 @@ ggplot(pw3, aes(PC1, PC2)) +
 # evaluate differences in the morphospace with npMANOVA and/or ANOSIM
 
 
-
-
 ### PCA axes used with fitContinuous
 
 
@@ -75,6 +73,7 @@ plot(pcclustering)
 pctree <- as.phylo(pcclustering)
 par(mar = c(0,0,0,0))
 plot(pctree)
+
 
 # simulate evolutionary rates
 traits <- c(1,2,3,1,2,3,2,3,4,1,1,
@@ -100,6 +99,52 @@ simmap2 <- make.simmap(charactertree$phy, charactertree$data[,23], model = "ER",
 plotSimmap(simmap2)
 
 
+
+##### compare.evol.rates with geomorph - separate by group (eg diet) #####
+# measuring rates of trait evolutions as Borstein et al
+traits1 <- factor(traits)
+names(traits1) <- pctree$tip.label
+g <- compare.evol.rates(A = specimens,
+                        phy = pctree, 
+                        gp = traits1, 
+                        iter = 999)
+summary(g) # evolutionary rate by group calculated
+par(mar = c(5,4,2,2))
+plot(g)
+
+
+##### MCMC #####
+# geiger rjmcmc
+# continuous data - PC axes - stored in pwtraits
+# only takes one trait at a time
+pc1 <- pwtraits[,1]
+names(pc1) <- pctree$tip.label
+geiger::rjmcmc.bm(phy = pctree, dat = pc1, ngen = 10000, sample.freq = 10, type = "bm")
+res <- load.rjmcmc("BM.result/")
+plot(x = res, par = "shifts", burnin = 0.25, legend = T, show.tip = F, edge.width = 2) # plotting colour and shapes not working properly
+plot(x = res, par = "jumps", burnin = 0.25, legend = T, show.tip = F, edge.width = 2) # no jumps to visualise here
+
+plot(x = res, par = "shifts", burnin = 0.25, legend = T, show.tip = T)
+
+
+## try with ggtree
+library(ggplot2)
+library(ggtree)
+ggtree(res$phy, aes(colour = res$rates)) +
+  scale_color_continuous(low = "blue", high = "red")
+# error but on the right track
+
+
+
+# evol.rate.mcmc in phytools
+phyt <- evol.rate.mcmc(tree = pctree, x = pc1, ngen = 10000)
+phytres <- summary(phyt)
+plot(phytres, type = "min.split")
+plot(phytres, type = "edge.prob") # nothing plotted
+
+
+
+##### extra plots #####
 ## if we use something like diet to separate the species we can use ordiellipse and ordispider after NMDS
 par(mar=c(2,2,2,2))
 plot(x = pw$PC1,
@@ -122,7 +167,7 @@ plot(x = pw$PC1,
      col = c("limegreen", "firebrick", "steelblue", "gold")[pwtraits$traits],
      pch = 16)
 
-### phylogenetic signal
+##### phylogenetic signal #####
 library(picante)
 sig <- phylosignal(pwtraits$traits, pctree, reps = 999) # tip labels in the same order
 # K > 1 => covariance among species is stronger than expected under Browian motion evolution

@@ -47,6 +47,15 @@ specimens <- y$coords
 # put each sheet into a list and apply plotRefToTarget to all elements in the list
 # use a for loop?
 
+par(mfrow=c(3,1))
+par(mar=c(0,0,0,0))
+plotRefToTarget(M1 = meanshape, 
+                M2 = y$coords[,,1])
+plotRefToTarget(M1 = meanshape, 
+                M2 = y$coords[,,2])
+plotRefToTarget(M1 = meanshape, 
+                M2 = y$coords[,,3])
+
 
 ### dispRity - for ordination of procrustes points
 library(dispRity)

@@ -18,14 +18,8 @@ Tasks:
 * identify deformations
 
 <br>
-<img align="left" src="Figures/Trilobite coordinates.png" width="500">
-<img align="right" src="Figures/Trilobite thin plate splines.png" width="500">
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<img align="middle" src="Figures/Trilobite coordinates.png" width="500">
+<img align="middle" src="Figures/Trilobite thin plate splines.png" width="500">
 <br>
 <br>
 <hr>
@@ -37,7 +31,7 @@ Tasks:
 * plot specimens in the morphospace
 
 <br>
-<img align="center" src="Figures/Principal warps coloured by prey.png" width="600">
+<img align="middle" src="Figures/Principal warps coloured by prey.png" width="600">
 <br>
 <br>
 <hr>
@@ -49,8 +43,8 @@ Tasks:
 * investigate changes in rates of evolution
 
 <br>
-<img align="left" src="Figures/Principal warps sharks.png" width="400">
-<img align="right" src="Figures/pc1 contmap.png" width="400">
+<img align="middle" src="Figures/Principal warps sharks.png" width="400">
+<img align="midddle" src="Figures/pc1 contmap.png" width="400">
 <br>
 <br>
 <img align="middle" src="Figures/pc1 shifts plot.png" width="700">

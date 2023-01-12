@@ -8,7 +8,7 @@ Learning objectives:\
 :fish: understand morphological variables relating to function and physiology\
 :fish: undertake comparative studies using real specimens and report the results in the context of relevant literature\
 
-<hr>
+
 ### Mapping Morphometric Landmarks
 Tasks:
 * create a landmark scheme

@@ -10,33 +10,36 @@ Learning objectives:\
 
 <hr>
 ### Mapping Morphometric Landmarks
-Tasks:\
-* create a landmark scheme\
-* identify homologous structures\
-* align homologous points\
-* identify deformations\
+Tasks:
+* create a landmark scheme
+* identify homologous structures
+* align homologous points
+* identify deformations
 
+<br>
 <img align="left" src="Figures/Trilobite coordinates.png" width="400">
 <img align="right" src="Figures/Trilobite thin plate splines.png" width="400">
 <br>
 <br>
 
 ### Morphospace
-Tasks:\
-* investigate patterns of shape variation\
-* principal component analysis of landmarks\
-* plot specimens in the morphospace\
+Tasks:
+* investigate patterns of shape variation
+* principal component analysis of landmarks
+* plot specimens in the morphospace
 
+<br>
 <img align="centre" src="Figures/Principal warps coloured by prey.png" width="600">
 <br>
 <br>
 
 ### Applying Evolutionary Models
-Tasks:\
-* map PCA data to a phylogeny\
-* estimate ancestral states\
-* investigate changes in rates of evolution\
+Tasks:
+* map PCA data to a phylogeny
+* estimate ancestral states
+* investigate changes in rates of evolution
 
+<br>
 <img align="left" src="Figures/Principal warps sharks.png" width="400">
 <img align="right" src="Figures/pc1 contmap.png" width="400">
 <br>

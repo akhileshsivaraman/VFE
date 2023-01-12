@@ -7,6 +7,7 @@ Learning objectives:\
 :fish: practice key dissection and specimen preparation skills\
 :fish: understand morphological variables relating to function and physiology\
 :fish: undertake comparative studies using real specimens and report the results in the context of relevant literature\
+<hr>
 
 
 ### Mapping Morphometric Landmarks
@@ -21,6 +22,7 @@ Tasks:
 <img align="right" src="Figures/Trilobite thin plate splines.png" width="400">
 <br>
 <br>
+<hr>
 
 ### Morphospace
 Tasks:
@@ -32,6 +34,7 @@ Tasks:
 <img align="centre" src="Figures/Principal warps coloured by prey.png" width="600">
 <br>
 <br>
+<hr>
 
 ### Applying Evolutionary Models
 Tasks:
@@ -42,6 +45,7 @@ Tasks:
 <br>
 <img align="left" src="Figures/Principal warps sharks.png" width="400">
 <img align="right" src="Figures/pc1 contmap.png" width="400">
+<br>
 <br>
 <img align="centre" src="Figures/pc1 shifts plot.png" width="700">
 <br>

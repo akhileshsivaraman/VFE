@@ -18,8 +18,8 @@ Tasks:
 * identify deformations
 
 <br>
-<img align="left" src="Figures/Trilobite coordinates.png" width="400">
-<img align="right" src="Figures/Trilobite thin plate splines.png" width="400">
+<img align="left" src="Figures/Trilobite coordinates.png" width="500">
+<img align="right" src="Figures/Trilobite thin plate splines.png" width="500">
 <br>
 <br>
 <hr>
@@ -31,7 +31,7 @@ Tasks:
 * plot specimens in the morphospace
 
 <br>
-<img align="centre" src="Figures/Principal warps coloured by prey.png" width="600">
+<img align="center" src="Figures/Principal warps coloured by prey.png" width="600">
 <br>
 <br>
 <hr>

@@ -22,6 +22,12 @@ Tasks:
 <img align="right" src="Figures/Trilobite thin plate splines.png" width="500">
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <hr>
 
 ### Morphospace
@@ -47,5 +53,5 @@ Tasks:
 <img align="right" src="Figures/pc1 contmap.png" width="400">
 <br>
 <br>
-<img align="centre" src="Figures/pc1 shifts plot.png" width="700">
+<img align="middle" src="Figures/pc1 shifts plot.png" width="700">
 <br>

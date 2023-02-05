@@ -44,8 +44,7 @@ Tasks:
 
 <br>
 <img align="middle" src="Figures/Principal warps sharks.png" width="400">
-<img align="midddle" src="Figures/pc1 contmap.png" width="400">
-<br>
+<img align="midddle" src="Figures/pc1 contmap.png" width="600">
 <br>
 <img align="middle" src="Figures/pc1 shifts plot.png" width="700">
 <br>

@@ -6,7 +6,7 @@ Learning objectives:\
 :fish: understand advanced topics in phylogenetics\
 :fish: practice key dissection and specimen preparation skills\
 :fish: understand morphological variables relating to function and physiology\
-:fish: undertake comparative studies using real specimens and report the results in the context of relevant literature\
+:fish: undertake comparative studies using real specimens and report the results in the context of relevant literature
 <hr>
 
 
